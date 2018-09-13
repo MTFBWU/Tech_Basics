@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script type=text/javascript src="{{url_for('static', filename='pong.js')}}"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.1/p5.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/addons/p5.dom.js"></script>
+  <link rel="stylesheet" type="text/css" href="{{url_for('static', filename = 'style.css')}}"></link>
+  <title>Code page</title>
+</head>
+
+<body>
+  <div id="mainContainer">
+
+    <div id="tagline">
+      <h1>MouseCase 0.1</h1>
+    </div>
+
+
+    <div id="navigation">
+      <!--navigation Bar-->
+      <ul>
+        <li><a href="/">ABOUT</li>
+        <li><a href="material.html">MATERIAL/PRODUCTION</li>
+  <li>RESEARCH</li>
+        <li><a href="reference.html">REFERNECE</a></li>
+      </ul>
+    </div>
+
+<p>
+  To create the mouse Case, we have to first understand the basic knowledge of
+<p style="text-decoration: underline;"> what is a mouse, types of mouses and how a mouse works.  </p>
+</p>
+
+
+<h2>What is a mouse?</h2>
+<p>A computer mouse is a hand-held pointing device that detects two-dimensional motion relative to a surface. This motion is typically translated into the motion of a pointer on a display, which allows a smooth control of the graphical user interface</p>
+<hr>
+<h2>Types of mouse:</h2>
+<ul style= "list-style-type: none; margin: 0; padding: 0;">
+ <li style="color: #a1a1a1;">Wireless Mouse</li>
+ <li style="color: #a1a1a1;">Trackball Mouse</li>
+ <li style="color: #a1a1a1;">Optical Mouse</li>
+ <li style="color: #a1a1a1;">Laser Mouse</li>
+ <li style="color: #a1a1a1;">Ball Mouse</li>
+ <li style="color: #a1a1a1;">Optical-mechanical Mouse</li>
+</ul>
+<p>We will be using a Optical mouse sensor for this project. This is because Optical is far cheaper while being wireless and functions based on the same theory as laser mouse while with more stable results. </p>
+
+<hr>
+<h2>How does an Optical mouse function?</h2>
+
+<img src="/static/mouseStructure.jpg" style="width:300px;height:300px;border:0;">
+
+<p>
+Optical mice contain LEDs. ... Able to work on almost any surface, the mouse has a small, red light-emitting diode (LED) that bounces light off that surface onto a complementary metal-oxide semiconductor (CMOS) sensor. The CMOS sensor sends each image to a digital signal processor (DSP) for analysis.
+</p>
+
+<p> in other words...</p>
+
+<p style="color: #a1a1a1;"> --> Optical mouse is basically a low-resolution camera. </p>
+<p style=""> --> It combined with 2 lenses and a source of illumination that tracks the peripheral’s X and Y coordinates thousands of times per second. </p>
+<p style="color: #a1a1a1;"> --> The CMOS sensor collects the light, and converts the light particles into an electrical current. This analog data is then converted into 1’s and 0’s,  </p>
+
+
+</body>
+
+</html>

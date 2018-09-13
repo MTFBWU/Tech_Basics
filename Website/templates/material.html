@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <script type=text/javascript src="{{url_for('static', filename='sketch.js')}}"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.7.1/p5.js"></script>
+  <!-- <script language="javascript" type="text/javascript" src="path/to/p5.dom.js"></script> -->
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.6.1/addons/p5.dom.js"></script>
+  <link rel="stylesheet" type="text/css" href="{{url_for('static', filename = 'style.css')}}"></link>
+  <title>Image page</title>
+</head>
+
+<body>
+  <div id="mainContainer">
+
+    <div id="tagline">
+      <h1>MouseCase 0.1</h1>
+    </div>
+
+    <div id="navigation">
+      <!--navigation Bar-->
+      <ul>
+        <li><a href="/">ABOUT</li>
+          <li>MATERIAL/PRODUCTION</li>
+        <li><a href="research.html">RESEARCH</li>
+        <li><a href="reference.html">REFERENCE</a></li>
+      </ul>
+    </div><!--end of navigation Bar-->
+
+<h2>Material</h2>
+<ul>
+  <li> Optical Mouse Sensor(ADNS-3050) </li>
+  <li> Arduino Board (leonardo)</li>
+  <li> Processing.Js</li>
+  <li> Solder</li>
+</ul>
+
+<hr>
+
+  <img src="/static/ADNS.png" style="width:400px;height:300px;border:0;">
+  <img src="/static/crossSection.png" style="width:400px;height:300px;border:0;">
+
+
+<h2>Estimated Production Process</h2>
+<p>Step 1: Wire the sensor to the arduino board </p>
+<p>Step 2: Testing the communication </p>
+<p style="color: grey"> - Make sure arduino can communicate with the sensor </p>
+<p>Step 3: Data Retrieving</p>
+<p style="color: grey"> - Test the changes of X & Y Axis (getX() and getY()) </p>
+<p style="color: grey"> - Use Serial library to send data through USB cable or any wireless data module, like a bluetooth or a 433MHz radio, attached to serial interface.</p>
+<p>Step 4: 3D Modeling</p>
+<p style="color: grey"> - print and assemble sensor into the phonecase </p>
+
+</body>
+
+</html>
